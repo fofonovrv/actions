@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  echoserver:
+    restart: always
+    image: fofonovrv/test_actions:latest
+    container_name: echoserver
+    ports:
+      - 8000:8000
