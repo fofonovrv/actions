@@ -3,6 +3,7 @@
   gather_facts: true
   vars:
     app_path: /opt/echo_service
+    
   tasks:
     - name: "create {{ app_path }}/"
       file:
