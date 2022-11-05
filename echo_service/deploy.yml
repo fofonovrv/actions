@@ -26,10 +26,10 @@
       become_method: sudo
 
     - name: "stop services"
-      shell: docker-compose -f {{ app_path }}/docker-compose.yml stop
+      shell: docker compose -f {{ app_path }}/docker-compose.yml stop
 
     - name: "pull images"
-      shell: docker-compose -f {{ app_path }}/docker-compose.yml pull
+      shell: docker compose -f {{ app_path }}/docker-compose.yml pull
 
     - name: "start services"
-      shell: docker-compose -f {{ app_path }}/docker-compose.yml up -d
+      shell: docker compose -f {{ app_path }}/docker-compose.yml up -d
