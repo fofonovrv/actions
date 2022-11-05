@@ -19,8 +19,8 @@
       copy:
         src: "docker-compose.yml"
         dest: "{{ app_path }}/docker-compose.yml"
-        owner: "noteadmin"
-        group: "noteadmin"
+        owner: "admin"
+        group: "admin"
         mode: 0644
       become: yes
       become_method: sudo
